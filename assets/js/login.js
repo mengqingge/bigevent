@@ -56,7 +56,8 @@ $(function () {
             method: 'post',
             data: $(this).serialize(),
             success: res => {
-                if (res.status !== 1) {
+               
+                if (res.status !== 0) {
                     return layer.msg('登录失败')
                 }
                 layer.msg('登录成功')
